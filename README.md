@@ -1,6 +1,6 @@
 # AgriMind -- Intelligent IoT Agriculture Platform
 
-🚀 **Live Demo:** *Click Here to View Dashboard*
+🚀 **Live Demo:** [Click Here to View Dashboard](https://agriculture-7xjp.onrender.com)
 
 AgriMind is an AI-powered IoT platform designed to help farmers optimize
 crop yields and detect sensor anomalies in real time. It integrates a
