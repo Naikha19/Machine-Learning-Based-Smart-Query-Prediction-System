@@ -1,4 +1,4 @@
-# QueryMind -- Intelligent IoT Agriculture Platform
+# QueryMind -- An Intelligent Query Prediction and Analytics Platform
 
 🚀 **Live Demo:** [Click Here to View Dashboard](https://agriculture-7xjp.onrender.com)
 
