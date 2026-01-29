@@ -1,55 +1,64 @@
-# QueryMind — Smart Query Prediction System
+# QueryMind -- An Intelligent Query Prediction and Analytics Platform
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+🚀 **Live Demo:** [Click Here to View Dashboard](https://agriculture-7xjp.onrender.com)
 
-QueryMind predicts user queries using historical datasets and ML models, optimizing data retrieval and reducing manual effort.
+QueryMind is an AI-powered IoT platform designed to help farmers optimize
+crop yields and detect sensor anomalies in real time. It integrates a
+Python backend (FastAPI + TensorFlow) with a modern React frontend to
+deliver actionable agricultural insights.
 
----
+------------------------------------------------------------------------
 
-## 🚀 Key Goals
-- **Predict Queries:** Suggest likely next queries based on history.  
-- **Insights:** Quick analytics, trends, and anomaly detection.  
-- **Domain-Independent:** Works across agriculture, healthcare, finance, e-commerce.  
-- **User-Friendly:** Simple web UI with tables & charts.  
-- **Performance:** Track prediction accuracy and query efficiency.
+## 🧠 Key Features
 
----
+### 1. Crop & Yield Recommendation Engine
 
-## ⚙️ Tech Stack
-| Layer    | Tools                               |
-|---------|-------------------------------------|
-| Backend | Python (FastAPI / Flask)            |
-| ML      | Random Forest, XGBoost, LSTM        |
-| Frontend| React, Tailwind CSS, Chart.js       |
-| DB      | MonetDB / SQLite                     |
-| Dev     | VS Code, Python 3.10+, Git          |
+-   **Inputs:** Soil Nitrogen, Temperature, Pesticide Use, Fertilizer
+    Amount\
+-   **Models Used:**
+    -   Random Forest (Crop Classification)\
+    -   XGBoost (Yield Regression)\
+-   **Outputs:**
+    -   Best crop recommendation (e.g., Rice, Coffee, Apples)\
+    -   Predicted yield in *hg/ha*
 
----
+### 2. Real-time IoT Anomaly Detection
 
-## 🔧 Quick Setup
+-   **Inputs:** 24-hour IoT sensor stream (Moisture, Temperature,
+    Humidity)\
+-   **Model:** LSTM Autoencoder\
+-   **Function:** Detects sensor malfunctions, irrigation leaks, and
+    sudden environmental variations.
 
-```bash
-git clone https://github.com/Naikha19/Machine-Learning-Based-Smart-Query-Prediction-System.git
-cd QueryMind
-python -m venv venv
-# Activate environment
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate     # Windows
-pip install -r requirements.txt
+------------------------------------------------------------------------
 
-# Run backend
-uvicorn app.main:app --reload
+## 🛠️ Tech Stack
 
-# Run frontend
-cd frontend
-npm install
-npm start
+-   **Frontend:** HTML5, Tailwind CSS, React.js, Chart.js\
+-   **Backend:** Python, FastAPI, Uvicorn\
+-   **Machine Learning:** TensorFlow (Keras), Scikit-learn, XGBoost,
+    Joblib\
+-   **Deployment:** Render (Unified Full-Stack Hosting)
 
-## ⚡ Features
+------------------------------------------------------------------------
 
-- Smart query suggestions with ML
-- Auto-run queries & display results
-- Visualizations: tables & charts
-- Multi-domain dataset support
-- Model evaluation & performance tracking
+## 📊 Data Sources
+
+Trained using datasets from the **Food and Agriculture Organization
+(FAO)**.
+
+-   **Portal:** FAOSTAT\
+-   **Domains:** Crop Production, Soil Nutrient Budget, Temperature
+    Change
+
+------------------------------------------------------------------------
+
+## 📂 Repository Includes
+
+-   `project.ipynb` Jupyter Notebook\
+-   Training scripts, preprocessing pipeline, and model artifacts\
+-   Complete frontend + backend source code
+
+------------------------------------------------------------------------
+
+👨‍💻 **Created by:** *Naaman O Jecha*
