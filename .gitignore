@@ -1,1 +1,22 @@
+# --- Python ---
+venv/
+ENV/
+env/
+bin/
+lib/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- Machine Learning Assets  ---
+*.h5
+*.pkl
+
+
+# --- Project Specific ---
 project.pdf
+.env

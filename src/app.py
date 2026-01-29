@@ -25,12 +25,12 @@ app.add_middleware(
 # LOAD MODELS (Safe Mode)
 # ---------------------------
 try:
-    rfc = joblib.load("rfc_model.pkl")
-    le = joblib.load("label_encoder.pkl")
-    xgbr = joblib.load("xgboost_model.pkl")
-    scaler = joblib.load("scaler.pkl")
+    rfc = joblib.load("models/rfc_model.pkl")
+    le = joblib.load("models/label_encoder.pkl")
+    xgbr = joblib.load("models/xgboost_model.pkl")
+    scaler = joblib.load("models/scaler.pkl")
     # Load Keras model without compiling to avoid version errors
-    autoencoder = load_model("lstm_autoencoder.h5", compile=False)
+    autoencoder = load_model("models/lstm_autoencoder.h5", compile=False)
     models_loaded = True
     print("✅ All AI Models Loaded Successfully.")
 except Exception as e:
@@ -63,8 +63,9 @@ def read_root():
     This route reads your index.html file and serves it 
     when someone visits your website URL.
     """
+    file_path = "templates/index.html"
     try:
-        with open("index.html", "r") as f:
+        with open(file_path, "r") as f:
             return f.read()
     except FileNotFoundError:
         return "<h1>Error: index.html not found. Make sure it is in the same folder as app.py</h1>"
