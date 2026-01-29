@@ -18,5 +18,5 @@ __pycache__/
 
 
 # --- Project Specific ---
-project.pdf
+*.pdf
 .env
