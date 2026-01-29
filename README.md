@@ -61,4 +61,4 @@ Trained using datasets from the **Food and Agriculture Organization
 
 ------------------------------------------------------------------------
 
-👨‍💻 **Created by:** *Shubham Lakhani*
+👨‍💻 **Created by:** *Naaman O Jecha*
