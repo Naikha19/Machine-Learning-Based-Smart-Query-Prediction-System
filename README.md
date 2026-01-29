@@ -46,14 +46,10 @@ cd frontend
 npm install
 npm start
 
-⚡ Features
+## ⚡ Features
 
-Smart query suggestions with ML
-
-Auto-run queries & display results
-
-Visualizations: tables & charts
-
-Multi-domain dataset support
-
-Model evaluation & performance tracking
+- Smart query suggestions with ML
+- Auto-run queries & display results
+- Visualizations: tables & charts
+- Multi-domain dataset support
+- Model evaluation & performance tracking
